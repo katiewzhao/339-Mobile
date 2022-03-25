@@ -5,6 +5,20 @@
     font-size: 16px;
 }
 
+a.skip{
+    background: white;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: left 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    left: -500px;
+  }
+
+  a.skip:focus{
+    left: 0px;
+  }
+
 body{
     background-image: linear-gradient(#B4BAC6,#F3EFE9);
     margin: 0 4vw 0 4vw;
@@ -162,7 +176,7 @@ strong{
 .tag ul li{
     /* list-style: none; */
     display: block;
-    color: #fcfcfc;
+    color: #3B424B;
     background-color: #B4BAC6;
     border-radius: 1rem;
     padding: 0.5rem 1rem;
@@ -253,14 +267,21 @@ h5.card-title{
 }
 
 .content{
-    display: inline-block;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0 4vw 0 4vw;
 }
 
+.content p,
+.content ul{
+    grid-column: 1/5;
+}
+
 .content img{
-    position: relative;
+    grid-column: 1/5;
     border-radius: 1rem;
     margin: 0 auto 2rem;
+    width: 100%;
 }
 
 .content h1{
@@ -268,6 +289,7 @@ h5.card-title{
     font-family: 'Jost', sans-serif;
     margin-bottom: 0;
     text-align: center;
+    grid-column: 1/5;
 }
 
 .content h2{
@@ -276,28 +298,45 @@ h5.card-title{
     font-family: 'Jost', sans-serif;
     font-size: 1.5rem;
     color: #3B424B;
+    grid-column: 1/5;
 }
 
 .content h3{
     margin-top: 0;
-    color: #7D8799;
+    color: #3B424B;
     font-family: 'Jost', sans-serif;
     text-align: center;
     font-weight: 500;
+    grid-column: 1/5;
 }
 
 .content .centerimg img{
     display: block;
     position: relative;
     margin: 0 auto 2rem;
+    width:60%;
+    grid-column: 1/5;
+}
+
+.content #jewlery img{
+    width: 100%;
+    grid-column: 1/5;
 }
 
 .content video{
     margin-bottom: 2rem;
+    width: 100%;
+    grid-column: 1/5;
 }
 
 #growcover{
     margin: 2rem 0;
+    width: 100%;
+}
+
+#spotcover{
+    margin: 2rem 0;
+    width: 100%;
 }
 
 i{
@@ -349,7 +388,7 @@ i{
 }
 
 body#whitebg #lgnav li a{
-    color:#B4BAC6;
+    color:#3B424B;
 }
 
 body#whitebg #lgnav li a:hover {
@@ -357,7 +396,7 @@ body#whitebg #lgnav li a:hover {
 }
 
 body#whitebg #lgnav li.active a{
-    color: #3B424B;
+    color: black;
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -412,8 +451,8 @@ form{
   }
   
   input[type=submit] {
-    background-color: #7D8799;
-    color: white;
+    background-color: #B4BAC6;
+    color: #3B424B;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
