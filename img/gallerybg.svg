@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2316" height="861" viewBox="0 0 2316 861">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.057" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f3efe9" stop-opacity="0"/>
+      <stop offset="0.25" stop-color="#f3efe9"/>
+      <stop offset="1" stop-color="#b4bac6"/>
+    </linearGradient>
+  </defs>
+  <rect id="Placement_Area" data-name="Placement Area" width="2316" height="861" transform="translate(2316 861) rotate(180)" fill="url(#linear-gradient)"/>
+</svg>
